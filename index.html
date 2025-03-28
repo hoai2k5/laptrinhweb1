@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    body {
+        background-color: #f8f8f8;
+        text-align: center;
+    }
+        .menu {
+            display: flex;
+            justify-content: center;
+            padding: 10px 5px;
+            border: solid 2px black;
+            margin-top: 30px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            padding: 0 3px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 400px;
+            border: solid 2px black;
+            margin: 50px 400px;
+        }
+
+        .heading{
+            display: flex;
+            justify-content: center;
+            margin: 25px;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .Username{
+            padding: 10px 25px  ;
+        }
+        .password{
+            padding: 0 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="Home">Home</a>|
+        <a href="DangNhap">Đăng nhập</a>|
+        <a href="DangKy">Đăng ký</a>
+    </div>
+    <div class="info">
+        <div class="heading">Màn hình đăng nhập</div>
+        <label class="Username">Username <input type="text"></label>
+
+        <label class="password">Mật khẩu <input type="text"></label>
+
+        <label class="checkbox">
+            <input type="checkbox">
+            Ghi nhớ đăng nhập
+        </label>
+        <div class="end">
+            <a href="#">Quên mật khẩu</a>
+            <button>Đăng Nhập</button>
+        </div>
+    </div>
+</body>
+
+</html>
